@@ -1,0 +1,135 @@
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+/*Fonts*/
+@font-face {
+    font-family: 'Corporate';
+    src: url(../fonts/Corporate-A-Bold.woff);
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'Roboto Condensed';
+    src: url(../fonts/RobotoCondensed-Regular.ttf);
+    font-weight: 400;
+}
+
+/*Common*/
+body {
+    font-family: 'Roboto Condensed';
+    background: #070A1B;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 72px;
+    line-height: 86px;
+    font-family: 'Corporate';
+}
+
+h2 {
+    font-family: 'Corporate';
+    font-size: 18px;
+    text-transform: uppercase;
+    line-height: 22px;
+    color: #F402A2;
+}
+
+/*1 block*/
+.header {
+    padding-bottom: 150px;
+    position: relative;
+}
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+.header .logo__img {
+    margin-left: 130px;
+}
+.social-list {
+    display: flex;
+}
+.social-item + .social-item {
+    margin-left: 30px;
+}
+.social__link {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all .4s ease-in-out;
+}
+.social__link:hover {
+    background-color: #C1A1D2;
+}
+.header__content {
+    background-image: url(../images/header-bg.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    border-radius: 400px 400px 0 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+
+    min-height: calc(100vh - 100px); /*full screen (minus header__top)*/
+}
+.header__title {
+    margin-bottom: 5px;
+}
+.header__text {
+    font-style: 24px;
+    line-height: 29px;
+    margin-bottom: 49px;
+}
+.header__logo-icon {
+    position: absolute;
+    bottom: 11%;
+}
+.menu__dropdown-list {
+    display: none;
+    position: absolute;
+}
+.menu__dropdown-list--active {
+    display: block;
+}
+.header__nav {
+
+}
+.header__nav--active {
+   
+}
