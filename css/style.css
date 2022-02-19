@@ -27,6 +27,10 @@ body {
     color: #fff;
 }
 
+p {
+    margin-bottom: 23px;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -47,6 +51,22 @@ button {
     border: none;
     padding: 0;
     cursor: pointer;
+}
+
+.more-btn {
+    max-width: 570px;
+    padding: 14px 260px;
+    color: #F402A2;
+    border: 1px solid #F402A2;
+    font-family: 'Corporate';
+    font-size: 18px;
+    line-height: 22px;
+    transition: all .4s ease-in;
+}
+
+.more-btn:hover {
+    color: #53A1CB;
+    border: 1px solid #53A1CB;
 }
 
 h1 {
@@ -97,7 +117,7 @@ section {
     display: flex;
     justify-content: center;
     border-radius: 50%;
-    transition: all .4s ease-in-out;
+    transition: all .4s ease-in;
 }
 .social__link:hover {
     background-color: #C1A1D2;
@@ -152,7 +172,7 @@ section {
 .menu__dropdown-list li {
     border-bottom: 1px dotted #F402A2;
     padding: 10px 0;
-    transition: all .3s ease-in-out;
+    transition: all .3s ease-in;
 }
 .menu__dropdown-list li:last-child {
     border-bottom: none;
@@ -171,8 +191,33 @@ section {
 .concept__title-descr {
     font-size: 24px;
     line-height: 29px;
-    margin-bottom: 25px;
 }
 .concept__img {
     max-width: 100%;
+}
+
+/*3 block*/
+.premier__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.premier__content-box,
+.premier__quote-box {
+    width: 570px;
+}
+.premier__title {
+}
+.premier__content-img {
+    margin-bottom: 18px;
+}
+.button {
+}
+.premier-btn {
+}
+.premier__quote-img {
+    border-radius: 285px 0 0 0;
+    margin-bottom: 21px;
+}
+.premier__quote {
 }
