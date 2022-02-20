@@ -26,4 +26,13 @@ $(function(){
     //     vid.attr("controls");
     // });
 
+    //slider
+    $('.design-slider').slick({
+        dots: false,
+        slidesToShow: 4,
+        variableWidth: true,
+        prevArrow: '<img src="images/arrow-left.svg" class="arrow arrow-left">',
+        nextArrow: '<img src="images/arrow-right.svg" class="arrow arrow-right">',
+    });
+
 });
