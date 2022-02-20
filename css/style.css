@@ -94,7 +94,6 @@ section {
 
 /*1 block*/
 .header {
-    padding-bottom: 150px;
     position: relative;
     background: #070A1B;
 }
@@ -148,7 +147,7 @@ section {
 }
 .header__logo-icon {
     position: absolute;
-    bottom: 11%;
+    bottom: -2.5%;
 }
 .menu {
     width: 30px;
@@ -184,6 +183,9 @@ section {
 }
 
 /*2 block*/
+.concept {
+    margin-top: 150px;
+}
 .concept-box {
     margin-left: auto;
     max-width: 900px;
@@ -223,6 +225,9 @@ section {
 }
 .video .btn span {
     margin-left: 40px;
+}
+.video__poster {
+    margin-bottom: 25px;
 }
 .btn svg path,
 .btn svg {
@@ -327,4 +332,23 @@ section {
 
 section:last-child  {
     margin-bottom: 0;
+}
+
+/*6 block*/
+.footer {
+    background: #070A1B;
+}
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 300px;
+}
+.logo,
+.footer__text {
+    transition: all .4s ease-in;
+}
+.logo:hover,
+.footer__text:hover {
+    opacity: 0.8;
 }
