@@ -33,6 +33,15 @@ $(function(){
         variableWidth: true,
         prevArrow: '<img src="images/arrow-left.svg" class="arrow arrow-left">',
         nextArrow: '<img src="images/arrow-right.svg" class="arrow arrow-right">',
+        responsive: [
+            {
+                breakpoint: 431,
+                settings: {
+                    variableWidth: false,
+                    slidesToShow: 1,
+                }
+            }
+        ]
     });
 
     //scroll-up btn
