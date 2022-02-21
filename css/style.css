@@ -352,3 +352,32 @@ section:last-child  {
 .footer__text:hover {
     opacity: 0.8;
 }
+
+/*Scroll*/
+.scroll-btn {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 3%;
+    right: 5%;
+    z-index: 25;
+    border-radius: 100%;
+    color: #F402A2;
+    border: 1px solid #F402A2;
+    transition: border .4s linear;
+}
+.scroll-btn:hover {
+    color: #53A1CB;
+    border: 1px solid #53A1CB;
+}
+.scroll-btn svg {
+    width: 50%;
+    height: 50%;
+}
+.scroll-btn svg path {
+    fill: #F402A2;
+    transition: all .4s linear;
+}
+.scroll-btn:hover svg path {
+    fill: #53A1CB;
+}

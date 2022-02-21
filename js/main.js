@@ -35,4 +35,18 @@ $(function(){
         nextArrow: '<img src="images/arrow-right.svg" class="arrow arrow-right">',
     });
 
+    //scroll-up btn
+    $(window).scroll(function() { //smooth fading scroll
+        if ($(this).scrollTop()) {
+            $('.scroll-btn').fadeIn();
+        } else {
+            $('.scroll-btn').fadeOut();
+        }
+    });
+    $('.scroll-btn').click(function() { //scroll-up btn click func
+        $('html, body').animate({
+            scrollTop: 0
+        }, 2000);
+    });
+
 });
