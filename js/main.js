@@ -60,25 +60,28 @@ $(function(){ //jQuery
         }, 2000);
     });
 
+    //adding attribute to html-tag
+    //$('h2').attr("class", "_animate");
 });
 
 window.onload = function() { //JS
 
 //animation through positioning (relative & absolute):
     var pos = 0;
-    var text = document.getElementById('header_icon');
-    var time = setInterval(slide_down, 20);
+    var icon = document.getElementById('header_icon');
+    var time = setInterval(slide_up, 20);
 
-    function slide_down() {
-        if(pos >= 10) {
+    function slide_up() { //slide up animation for Mercedes logotype icon
+        if (pos >= 10) {
             clearInterval(time);
-        }
-        else {
+        } else {
             pos += 1;
-            text.style.bottom = pos + "px";
+            icon.style.bottom = pos + "px";
         }
     }
 
+    //arrowL.style.transform = "translateX(0)";
+    //arrowR.style.right = pos + "px";
 };
 
 //animation with page scrolling:

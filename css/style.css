@@ -29,6 +29,32 @@ body {
 
 p {
     margin-bottom: 23px;
+
+    overflow-y: hidden;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 1s ease;
+}
+/*for animation delay*/
+p:nth-child(1) {
+    transition: all 1s ease;
+}
+p:nth-child(2) {
+    transition: all 2s ease;
+}
+p:nth-child(3) {
+    transition: all 3s ease;
+}
+p:nth-child(4),
+.design__cell-second p {
+    transition: all 4s ease;
+}
+p:nth-child(5) {
+    transition: all 5s ease;
+}
+p._active { /*animation*/
+    opacity: 1;
+    transform: translateY(0);
 }
 
 a {
@@ -62,7 +88,19 @@ button {
     font-size: 18px;
     line-height: 24px;
     text-transform: uppercase;
-    transition: all .4s ease-in;
+
+    transition: border .4s ease-in, color .4s ease-in, transform 2s ease;
+    opacity: 0;
+    transform: scale(1.1);
+}
+@media (max-width: 1350px) {
+    .btn {
+        transform: scale(.8);
+    }
+}
+.btn._active { /*animation*/
+    opacity: 1;
+    transform: scale(1);
 }
 
 .btn:hover {
@@ -86,6 +124,14 @@ h2 {
 
 main h2 {
     margin-bottom: 25px;
+
+    opacity: 0;
+    transform: translateY(-40px);
+    transition: all 1.8s ease-in-out;
+}
+main h2._active { /*animation*/
+    opacity: 1;
+    transform: translateY(0);
 }
 
 section {
@@ -111,6 +157,11 @@ section {
 .logo__img._active { /*animation*/
     opacity: 1;
     transform: scale(1);
+}
+@media (max-width: 600px) {
+    .logo__img {
+        transform: scale(1.1);
+    }
 }
 .header .logo__img {
     margin-left: 130px;
@@ -225,6 +276,16 @@ section {
 }
 
 /*2 block*/
+.main img._animate {
+    opacity: 0;
+    transform: scale(.9);
+    transition: all 1s ease-in-out;
+}
+.main img._animate._active { /*animation*/
+    opacity: 1;
+    transform: scale(1);
+}
+
 .concept {
     margin-top: 150px;
 }
@@ -250,13 +311,24 @@ section {
 .premier__quote-box {
     width: 570px;
 }
-
+.premier {
+    overflow: hidden;
+}
 .premier__content-img {
     margin-bottom: 18px;
 }
 
 .premier__quote-img {
     margin-bottom: 21px;
+}
+.premier__quote {
+    opacity: 0;
+    transform: translateX(50%);
+    transition: all 2s ease-out;
+}
+.premier__quote._active { /*animation*/
+    opacity: 1;
+    transform: translateX(0);
 }
 
 /*4 block*/
@@ -385,9 +457,17 @@ section:last-child  {
     align-items: center;
     height: 300px;
 }
+.footer__text {
+    opacity: 0;
+    transform: scale(.5);
+}
+.footer__text._active { /*animation*/
+    opacity: 1;
+    transform: scale(1);
+}
 .logo,
 .footer__text {
-    transition: all .4s ease-in;
+    transition: all .5s ease-in;
 }
 .logo:hover,
 .footer__text:hover {
